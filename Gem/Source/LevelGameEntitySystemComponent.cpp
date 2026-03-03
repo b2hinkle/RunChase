@@ -129,13 +129,7 @@ namespace xXGameProjectNameXx
         [[maybe_unused]] const Multiplayer::ConstNetworkEntityHandle& entityHandle,
         [[maybe_unused]] Multiplayer::EntityIsMigrating entityIsMigrating)
     {
-        // @Christian: TODO: [todo][engine][temporary] Use the asserted version of the get entity id function once we fix the
-        // engine to make sure this event gets called while the entity handle is still valid (i.e., still exists in the network entity tracker).
-#if 0
         const AZ::EntityId entityLocalId = O3deUtils::GetEntityIdByNetEntityIdAsserted(entityHandle.GetNetEntityId());
-#endif // #if 0
-
-        const AZ::EntityId entityLocalId = O3deUtils::TryGetEntityIdByNetEntityId(entityHandle.GetNetEntityId());
         if (IsLevelGameEntity(entityLocalId))
         {
             {
@@ -167,7 +161,13 @@ namespace xXGameProjectNameXx
         [[maybe_unused]] const Multiplayer::ConstNetworkEntityHandle& entityHandle,
         [[maybe_unused]] Multiplayer::EntityIsMigrating entityIsMigrating)
     {
+        // @Christian: TODO: [todo][engine][temporary] Use the asserted version of the get entity id function once we fix the
+        // engine to make sure this event gets called while the entity handle is still valid (i.e., still exists in the network entity tracker).
+#if 0
         const AZ::EntityId entityLocalId = O3deUtils::GetEntityIdByNetEntityIdAsserted(entityHandle.GetNetEntityId());
+#endif // #if 0
+
+        const AZ::EntityId entityLocalId = O3deUtils::TryGetEntityIdByNetEntityId(entityHandle.GetNetEntityId());
         if (IsLevelGameEntity(entityLocalId))
         {
             {
