@@ -86,7 +86,7 @@
                     "$type": "EditorTagComponent",
                     "Id": 4829006845759743628,
                     "Tags": [
-                        "xXGameProjectNameXx.LevelGameEntity"
+                        "O3deFramework.Misc.LevelGameEntity"
                     ]
                 },
                 "EditorVisibilityComponent": {

@@ -59,16 +59,4 @@ namespace xXGameProjectNameXx
     {
         static inline constexpr AZStd::string_view value = "{D865EBE8-0ACC-4500-A2CF-4DF0CD66D8D6}";
     };
-
-    template <>
-    struct TypeIdTrait<LevelGameEntitySystemComponent>
-    {
-        static inline constexpr AZStd::string_view value = "{FD0590C7-9F6F-4385-A74E-4FF8FD8DA656}";
-    };
-
-    template <>
-    struct TypeIdTrait<LevelGameEntityRequests>
-    {
-        static inline constexpr AZStd::string_view value = "{4B94AC11-5A3E-41D5-9159-125C1A90CF3E}";
-    };
 } // namespace xXGameProjectNameXx

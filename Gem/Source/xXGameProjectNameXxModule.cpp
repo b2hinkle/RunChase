@@ -11,7 +11,6 @@
 #include <Source/Components/MoverComponent.h>
 #include <Source/PlayerSystemComponent.h>
 #include <Source/Components/EntitySpawnerComponent_OneOffAtTransforms.h>
-#include <Source/LevelGameEntitySystemComponent.h>
 
 namespace xXGameProjectNameXx
 {
@@ -34,7 +33,6 @@ namespace xXGameProjectNameXx
                 MoverComponent::CreateDescriptor(),
                 PlayerSystemComponent::CreateDescriptor(),
                 EntitySpawnerComponent_OneOffAtTransforms::CreateDescriptor(),
-                LevelGameEntitySystemComponent::CreateDescriptor(),
             });
 
             // Create descriptors for our auto-components. Important: These are supposed to be the last descriptors added.
@@ -46,7 +44,6 @@ namespace xXGameProjectNameXx
             return AZ::ComponentTypeList{
                 azrtti_typeid<xXGameProjectNameXxSystemComponent>(),
                 azrtti_typeid<PlayerSystemComponent>(),
-                azrtti_typeid<LevelGameEntitySystemComponent>(),
             };
         }
     };

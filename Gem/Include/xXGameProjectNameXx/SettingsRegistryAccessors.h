@@ -3,21 +3,6 @@
 
 #include <xXGameProjectNameXx/xXGameProjectNameXxConfiguration.h>
 #include <AzCore/Settings/SettingsRegistry.h>
-#include <AzCore/std/optional.h>
-
-namespace AZ
-{
-    namespace Data
-    {
-        template <class T>
-        class Asset;
-    }
-}
-
-namespace AzFramework
-{
-    class Spawnable;
-}
 
 namespace xXGameProjectNameXx::SettingsRegistryAccessors
 {
@@ -38,9 +23,4 @@ namespace xXGameProjectNameXx::SettingsRegistryAccessors
         XXGAMEPROJECTNAMEXX_API AZ::SettingsRegistryInterface::FixedValueString GetCursorTexturePathname();
     }
 #endif // #if AZ_TRAIT_CLIENT
-
-    constexpr AZStd::string_view LevelGameEntityPrefabPathname = "/xXGameProjectNameXx/LevelGameEntityNetworkSpawnablePathname";
-
-    XXGAMEPROJECTNAMEXX_API AZStd::optional<AZ::SettingsRegistryInterface::FixedValueString> TryGetLevelGameEntityPrefabPathname();
-    XXGAMEPROJECTNAMEXX_API AZStd::optional<AZ::Data::Asset<AzFramework::Spawnable>> TryGetLevelGameEntityPrefabAsset();
 }
