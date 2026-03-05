@@ -79,4 +79,4 @@ namespace xXGameProjectNameXx
         void HandleRemovedControlledEntity(const AZ::EntityId& entityId);
 #endif // #if AZ_TRAIT_SERVER
     };
-} // namespace xXGameProjectNameXx
+}

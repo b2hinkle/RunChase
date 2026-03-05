@@ -31,4 +31,4 @@ namespace xXGameProjectNameXx
         void Deactivate() override;
         //! @}
     };
-} // namespace xXGameProjectNameXx
+}

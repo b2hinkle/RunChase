@@ -61,4 +61,4 @@ namespace xXGameProjectNameXx
 
         AZStd::vector<SpawnableAtTransform> m_spawnableAtTransformVector;
     };
-} // namespace xXGameProjectNameXx
+}

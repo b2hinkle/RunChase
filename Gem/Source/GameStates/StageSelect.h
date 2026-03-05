@@ -46,4 +46,4 @@ namespace xXGameProjectNameXx::GameStates
 
         AZ::EntityId m_canvasEntityId{AZ::EntityId::InvalidEntityId};
     };
-} // namespace xXGameProjectNameXx::GameStates
+}

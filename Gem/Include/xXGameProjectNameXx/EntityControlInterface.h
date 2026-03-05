@@ -90,4 +90,4 @@ namespace xXGameProjectNameXx
             return result;
         }
     }
-} // namespace xXGameProjectNameXx
+}

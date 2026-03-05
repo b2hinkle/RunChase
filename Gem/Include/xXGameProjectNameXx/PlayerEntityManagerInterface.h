@@ -83,4 +83,4 @@ namespace xXGameProjectNameXx
             PlayerEntityManagerRequestBus::Event(playerEntityManagerEntityId, &PlayerEntityManagerRequestBus::Events::SetPlayerEntitySpawnableLvalueMoved, newValue);
         }
     }
-} // namespace xXGameProjectNameXx
+}

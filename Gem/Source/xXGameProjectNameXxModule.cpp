@@ -47,7 +47,7 @@ namespace xXGameProjectNameXx
             };
         }
     };
-}// namespace xXGameProjectNameXx
+}
 
 #if defined(O3DE_GEM_NAME)
 AZ_DECLARE_MODULE_CLASS(AZ_JOIN(Gem_, O3DE_GEM_NAME), xXGameProjectNameXx::xXGameProjectNameXxModule)

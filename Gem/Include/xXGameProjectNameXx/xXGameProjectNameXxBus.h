@@ -32,4 +32,4 @@ namespace xXGameProjectNameXx
     using xXGameProjectNameXxRequestBus = AZ::EBus<xXGameProjectNameXxRequests, xXGameProjectNameXxBusTraits>;
     using xXGameProjectNameXxInterface = AZ::Interface<xXGameProjectNameXxRequests>;
 
-} // namespace xXGameProjectNameXx
+}

@@ -62,4 +62,4 @@ namespace xXGameProjectNameXx
     {
         MyExperimentRequestBus::Handler::BusDisconnect(GetEntityId());
     }
-} // namespace xXGameProjectNameXx
+}

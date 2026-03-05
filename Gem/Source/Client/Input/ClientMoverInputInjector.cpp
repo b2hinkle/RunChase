@@ -181,7 +181,7 @@ namespace xXGameProjectNameXx
             LogInputEvent(__func__, eventNameString, value);
         }
     }
-} // namespace xXGameProjectNameXx
+}
 
 namespace
 {

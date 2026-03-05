@@ -273,4 +273,4 @@ namespace xXGameProjectNameXx
         AZ::TransformBus::Event(entityId, &AZ::TransformInterface::SetParent, parentEntityId);
     }
 #endif // #if AZ_TRAIT_SERVER
-} // namespace xXGameProjectNameXx
+}

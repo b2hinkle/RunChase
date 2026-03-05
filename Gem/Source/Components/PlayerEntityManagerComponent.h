@@ -99,4 +99,4 @@ namespace xXGameProjectNameXx
             return static_cast<ComponentType&>(GetOwner());
         }
     };
-} // namespace xXGameProjectNameXx
+}

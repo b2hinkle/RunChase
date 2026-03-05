@@ -51,4 +51,4 @@ namespace xXGameProjectNameXx
         ClientMoverInputInjector m_implementation;
 #endif // #if AZ_TRAIT_CLIENT
     };
-} // namespace xXGameProjectNameXx
+}

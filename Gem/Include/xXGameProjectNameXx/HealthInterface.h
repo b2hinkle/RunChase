@@ -49,4 +49,4 @@ namespace xXGameProjectNameXx
         }
 #endif
     }
-} // namespace xXGameProjectNameXx
+}
