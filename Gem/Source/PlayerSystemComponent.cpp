@@ -1,7 +1,7 @@
 
 #include <Source/PlayerSystemComponent.h>
 
-#include <xXGameProjectNameXx/xXGameProjectNameXxTypeIds.h>
+#include <xXGameProjectNameXxTypeIds.h>
 #include <AzCore/Serialization/SerializeContext.h>
 #if AZ_TRAIT_CLIENT
 #include <LyShine/Bus/UiCursorBus.h>

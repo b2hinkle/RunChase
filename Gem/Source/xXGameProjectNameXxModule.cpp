@@ -1,7 +1,7 @@
 
 #include <AzCore/Module/Module.h>
 #include <AzCore/Memory/SystemAllocator.h>
-#include <xXGameProjectNameXx/xXGameProjectNameXxTypeIds.h>
+#include <xXGameProjectNameXxTypeIds.h>
 #include <Source/xXGameProjectNameXxSystemComponent.h>
 #include <Source/AutoGen/AutoComponentTypes.h>
 #include <Source/Components/MyExperimentComponent.h>
@@ -14,16 +14,13 @@
 
 namespace xXGameProjectNameXx
 {
-    class xXGameProjectNameXxModule
-        : public AZ::Module
+    class xXGameProjectNameXxModule : public AZ::Module
     {
     public:
-
         AZ_RTTI(xXGameProjectNameXxModule, GetTypeId<xXGameProjectNameXxModule>(), AZ::Module);
         AZ_CLASS_ALLOCATOR(xXGameProjectNameXxModule, AZ::SystemAllocator);
 
         xXGameProjectNameXxModule()
-            : AZ::Module()
         {
             m_descriptors.insert(m_descriptors.end(), {
                 xXGameProjectNameXxSystemComponent::CreateDescriptor(),
@@ -33,7 +30,8 @@ namespace xXGameProjectNameXx
                 MoverComponent::CreateDescriptor(),
                 PlayerSystemComponent::CreateDescriptor(),
                 EntitySpawnerComponent_OneOffAtTransforms::CreateDescriptor(),
-            });
+                }
+            );
 
             // Create descriptors for our auto-components. Important: These are supposed to be the last descriptors added.
             CreateComponentDescriptors(m_descriptors);

@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include <xXGameProjectNameXx/xXGameProjectNameXxConfiguration.h>
+#include <xXGameProjectNameXxConfiguration.h>
 #include <AzCore/Settings/SettingsRegistry.h>
 
 namespace xXGameProjectNameXx::SettingsRegistryAccessors

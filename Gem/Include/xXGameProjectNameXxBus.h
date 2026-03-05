@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include <xXGameProjectNameXx/xXGameProjectNameXxTypeIds.h>
+#include <xXGameProjectNameXxTypeIds.h>
 
 #include <AzCore/EBus/EBus.h>
 #include <AzCore/Interface/Interface.h>

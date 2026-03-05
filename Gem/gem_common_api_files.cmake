@@ -3,9 +3,9 @@
 set(FILES)
 
 list(APPEND FILES
-    Include/xXGameProjectNameXx/xXGameProjectNameXxConfiguration.h
-    Include/xXGameProjectNameXx/xXGameProjectNameXxBus.h
-    Include/xXGameProjectNameXx/xXGameProjectNameXxTypeIds.h
+    Include/xXGameProjectNameXxConfiguration.h
+    Include/xXGameProjectNameXxBus.h
+    Include/xXGameProjectNameXxTypeIds.h
     Include/xXGameProjectNameXx/MyExperimentInterface.h
     Include/xXGameProjectNameXx/MoverInterface.h
     Include/xXGameProjectNameXx/MoverNetworkInputInterface.h
