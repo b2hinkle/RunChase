@@ -11,7 +11,6 @@ list(APPEND FILES
     Include/xXGameProjectNameXx/MoverNetworkInputInterface.h
     Include/xXGameProjectNameXx/SettingsRegistryAccessors.h
     Include/xXGameProjectNameXx/LevelNames.h
-    Include/xXGameProjectNameXx/PlayerEntityManagerInterface.h
     Include/xXGameProjectNameXx/PlayerBus.h
     Include/xXGameProjectNameXx/EntityControlInterface.h
     Include/xXGameProjectNameXx/HealthInterface.h

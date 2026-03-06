@@ -161,11 +161,11 @@
                     "Parent Entity": "ContainerEntity",
                     "IsStatic": true
                 },
-                "xXGameProjectNameXx::PlayerEntityManagerComponent": {
+                "O3deFramework::PlayerEntityManagerComponent": {
                     "$type": "GenericComponentWrapper",
                     "Id": 5727641898154500813,
                     "m_template": {
-                        "$type": "xXGameProjectNameXx::PlayerEntityManagerComponent",
+                        "$type": "O3deFramework::PlayerEntityManagerComponent",
                         "PlayerEntitySpawnable": {
                             "Spawnable": {
                                 "assetId": {

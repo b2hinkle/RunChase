@@ -16,8 +16,6 @@ list(APPEND FILES
     Source/GameStates/StageSelect.h
     Source/GameStates/StageSelect.cpp
     Source/SettingsRegistryAccessors.cpp
-    Source/Components/PlayerEntityManagerComponent.h
-    Source/Components/PlayerEntityManagerComponent.cpp
     Source/PlayerSystemComponent.cpp
     Source/PlayerSystemComponent.h
     Source/Components/EntityControlComponent.h
