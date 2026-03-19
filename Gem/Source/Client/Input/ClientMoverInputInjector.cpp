@@ -11,7 +11,7 @@
 #include <AzCore/Console/ILogger.h>
 #include <AzCore/Debug/Trace.h>
 #include <O3deUtils/Misc/MultiplayerUtils.h>
-#include <AzCore/std/algorithm.h>
+#include <CppUtils/Core/Algorithm.h>
 
 namespace
 {
@@ -42,12 +42,12 @@ namespace xXGameProjectNameXx
 
         // Add them, if not already.
 
-        if (AZStd::find(required.begin(), required.end(), netBindService) == required.end())
+        if (!CppUtils::contains(required, netBindService))
         {
             required.push_back(netBindService);
         }
 
-        if (AZStd::find(required.begin(), required.end(), moverNetworkInputComponentService) == required.end())
+        if (!CppUtils::contains(required, moverNetworkInputComponentService))
         {
             required.push_back(moverNetworkInputComponentService);
         }
@@ -59,7 +59,7 @@ namespace xXGameProjectNameXx
 
         // Add them, if not already.
 
-        if (AZStd::find(dependent.begin(), dependent.end(), netBindService) == dependent.end())
+        if (!CppUtils::contains(dependent, netBindService))
         {
             dependent.push_back(netBindService);
         }
@@ -67,7 +67,7 @@ namespace xXGameProjectNameXx
 
     void ClientMoverInputInjector::OnActivate()
     {
-        if (O3deUtils::GetNetBindComponentAsserted(m_parentComponent).IsNetEntityRoleAutonomous())
+        if (O3deUtils::GetNetBindComponentAsserted(m_parentComponent.GetEntityId()).IsNetEntityRoleAutonomous())
         {
             // @Christian: TODO: [todo][techdebt][local_multiplayer] Actually get the local user id of the player that owns
             // this component. Important for supporting local multiplayer / splitscreen.
@@ -92,7 +92,7 @@ namespace xXGameProjectNameXx
 
     void ClientMoverInputInjector::OnDeactivate()
     {
-        if (O3deUtils::GetNetBindComponentAsserted(m_parentComponent).IsNetEntityRoleAutonomous())
+        if (O3deUtils::GetNetBindComponentAsserted(m_parentComponent.GetEntityId()).IsNetEntityRoleAutonomous())
         {
             StartingPointInput::InputEventNotificationBus::MultiHandler::BusDisconnect();
 
@@ -181,7 +181,7 @@ namespace xXGameProjectNameXx
             LogInputEvent(__func__, eventNameString, value);
         }
     }
-} // namespace xXGameProjectNameXx
+}
 
 namespace
 {

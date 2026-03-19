@@ -58,4 +58,4 @@ namespace xXGameProjectNameXx::SettingsRegistryAccessors
         }
     }
 #endif // #if AZ_TRAIT_CLIENT
-} // namespace xXGameProjectNameXx::Canvases
+}

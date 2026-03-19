@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include <xXGameProjectNameXx/xXGameProjectNameXxTypeIds.h>
+#include <xXGameProjectNameXxTypeIds.h>
 
 #include <AzCore/EBus/EBus.h>
 #include <AzCore/Interface/Interface.h>
@@ -32,4 +32,4 @@ namespace xXGameProjectNameXx
     using xXGameProjectNameXxRequestBus = AZ::EBus<xXGameProjectNameXxRequests, xXGameProjectNameXxBusTraits>;
     using xXGameProjectNameXxInterface = AZ::Interface<xXGameProjectNameXxRequests>;
 
-} // namespace xXGameProjectNameXx
+}

@@ -10,6 +10,9 @@ namespace xXGameProjectNameXx
     class xXGameProjectNameXxRequests;
     class PlayerSystemComponent;
     class PlayerRequests;
+    class LevelGameEntitySystemComponent;
+    class LevelGameEntityRequests;
+    class NetConnectionEntityRequests;
 }
 
 namespace xXGameProjectNameXx
@@ -56,4 +59,4 @@ namespace xXGameProjectNameXx
     {
         static inline constexpr AZStd::string_view value = "{D865EBE8-0ACC-4500-A2CF-4DF0CD66D8D6}";
     };
-} // namespace xXGameProjectNameXx
+}

@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include <xXGameProjectNameXx/xXGameProjectNameXxConfiguration.h>
+#include <xXGameProjectNameXxConfiguration.h>
 #include <AzCore/Settings/SettingsRegistry.h>
 
 namespace xXGameProjectNameXx::SettingsRegistryAccessors
@@ -23,4 +23,4 @@ namespace xXGameProjectNameXx::SettingsRegistryAccessors
         XXGAMEPROJECTNAMEXX_API AZ::SettingsRegistryInterface::FixedValueString GetCursorTexturePathname();
     }
 #endif // #if AZ_TRAIT_CLIENT
-} // namespace xXGameProjectNameXx
+}

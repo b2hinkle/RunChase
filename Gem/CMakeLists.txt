@@ -54,12 +54,13 @@ ly_add_target(
     NAMESPACE Gem
     FILES_CMAKE
         ${${gem_name}_COMMON_API_FILES_CMAKE}
-        gem_client_api_files.cmake
+        gem_common_api_client_files.cmake
     BUILD_DEPENDENCIES
         INTERFACE
             Gem::${gem_name}.Common.API
             Gem::O3deUtils_Core.Unified.API
             Gem::O3deUtils_Misc.Unified.API
+            Gem::O3deFramework_Misc.Unified.API
             Gem::Multiplayer.Unified
             Gem::StartingPointInput.Unified
             Gem::LyShine.Unified.API
@@ -75,6 +76,7 @@ ly_add_target(
             Gem::${gem_name}.Common.API
             Gem::O3deUtils_Core.Servers.API
             Gem::O3deUtils_Misc.Servers.API
+            Gem::O3deFramework_Misc.Servers.API
             Gem::Multiplayer.Servers
 )
 
@@ -83,12 +85,13 @@ ly_add_target(
     NAMESPACE Gem
     FILES_CMAKE
         ${${gem_name}_COMMON_API_FILES_CMAKE}
-        gem_client_api_files.cmake
+        gem_common_api_client_files.cmake
     BUILD_DEPENDENCIES
         INTERFACE
             Gem::${gem_name}.Common.API
             Gem::O3deUtils_Core.Clients.API
             Gem::O3deUtils_Misc.Clients.API
+            Gem::O3deFramework_Misc.Clients.API
             Gem::Multiplayer.Clients
             Gem::StartingPointInput.Clients
             Gem::LyShine.Clients.API
@@ -137,7 +140,7 @@ ly_add_target(
     NAMESPACE Gem
     FILES_CMAKE
         ${${gem_name}_COMMON_PRIVATE_OBJECT_FILES_CMAKE}
-        gem_client_private_files.cmake
+        gem_common_private_client_files.cmake
     TARGET_PROPERTIES
         ${${gem_name}_COMMON_PRIVATE_OBJECT_TARGET_PROPERTIES}
     BUILD_DEPENDENCIES
@@ -147,6 +150,7 @@ ly_add_target(
             Gem::Multiplayer.Unified.Static
             Gem::O3deUtils_Core.Unified
             Gem::O3deUtils_Misc.Unified
+            Gem::O3deFramework_Misc.Unified
             Gem::StartingPointInput.Unified
             Gem::LyShine.Unified
 )
@@ -165,6 +169,7 @@ ly_add_target(
             Gem::Multiplayer.Server.Static
             Gem::O3deUtils_Core.Servers
             Gem::O3deUtils_Misc.Servers
+            Gem::O3deFramework_Misc.Servers
 )
 
 ly_add_target(
@@ -172,7 +177,7 @@ ly_add_target(
     NAMESPACE Gem
     FILES_CMAKE
         ${${gem_name}_COMMON_PRIVATE_OBJECT_FILES_CMAKE}
-        gem_client_private_files.cmake
+        gem_common_private_client_files.cmake
     TARGET_PROPERTIES
         ${${gem_name}_COMMON_PRIVATE_OBJECT_TARGET_PROPERTIES}
     BUILD_DEPENDENCIES
@@ -182,6 +187,7 @@ ly_add_target(
             Gem::Multiplayer.Client.Static
             Gem::O3deUtils_Core.Clients
             Gem::O3deUtils_Misc.Clients
+            Gem::O3deFramework_Misc.Clients
             Gem::StartingPointInput.Clients
             Gem::LyShine.Clients
 )
@@ -194,8 +200,8 @@ unset(${gem_name}_COMMON_PRIVATE_OBJECT_TARGET_PROPERTIES)
 set(${gem_name}_COMMON_FILES_CMAKE
     ${${gem_name}_COMMON_API_FILES_CMAKE}
     ${${gem_name}_COMMON_PRIVATE_OBJECT_FILES_CMAKE}
-    gem_common_shared_files.cmake
-    ${pal_dir}/gem_common_shared_files.cmake
+    gem_game_shared_files.cmake
+    ${pal_dir}/gem_game_shared_files.cmake
     gem_common_autogen_files.cmake
 )
 
@@ -215,8 +221,8 @@ ly_add_target(
     NAMESPACE Gem
     FILES_CMAKE
         ${${gem_name}_COMMON_FILES_CMAKE}
-        gem_client_api_files.cmake
-        gem_client_private_files.cmake
+        gem_common_api_client_files.cmake
+        gem_common_private_client_files.cmake
     BUILD_DEPENDENCIES
         PUBLIC
             Gem::${gem_name}.Unified.API
@@ -224,6 +230,7 @@ ly_add_target(
             Gem::${gem_name}.Unified.Private.Object
             Gem::O3deUtils_Core.Unified
             Gem::O3deUtils_Misc.Unified
+            Gem::O3deFramework_Misc.Unified
     AUTOGEN_RULES
         ${${gem_name}_COMMON_AUTOGEN_RULES}
 )
@@ -240,6 +247,7 @@ ly_add_target(
             Gem::${gem_name}.Servers.Private.Object
             Gem::O3deUtils_Core.Servers
             Gem::O3deUtils_Misc.Servers
+            Gem::O3deFramework_Misc.Servers
     AUTOGEN_RULES
         ${${gem_name}_COMMON_AUTOGEN_RULES}
 )
@@ -249,8 +257,8 @@ ly_add_target(
     NAMESPACE Gem
     FILES_CMAKE
         ${${gem_name}_COMMON_FILES_CMAKE}
-        gem_client_api_files.cmake
-        gem_client_private_files.cmake
+        gem_common_api_client_files.cmake
+        gem_common_private_client_files.cmake
     BUILD_DEPENDENCIES
         PUBLIC
             Gem::${gem_name}.Clients.API
@@ -258,6 +266,7 @@ ly_add_target(
             Gem::${gem_name}.Clients.Private.Object
             Gem::O3deUtils_Core.Clients
             Gem::O3deUtils_Misc.Clients
+            Gem::O3deFramework_Misc.Clients
     AUTOGEN_RULES
         ${${gem_name}_COMMON_AUTOGEN_RULES}
 )
@@ -289,8 +298,8 @@ if(PAL_TRAIT_BUILD_HOST_TOOLS)
         NAMESPACE Gem
         FILES_CMAKE
             ${${gem_name}_COMMON_FILES_CMAKE}
-            gem_client_api_files.cmake
-            gem_client_private_files.cmake
+            gem_common_api_client_files.cmake
+            gem_common_private_client_files.cmake
         BUILD_DEPENDENCIES
             PUBLIC
                 Gem::${gem_name}.Unified.API

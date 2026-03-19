@@ -1,7 +1,7 @@
 
 #include <Source/xXGameProjectNameXxSystemComponent.h>
 
-#include <xXGameProjectNameXx/xXGameProjectNameXxTypeIds.h>
+#include <xXGameProjectNameXxTypeIds.h>
 #include <AzCore/Serialization/SerializeContext.h>
 #include <Source/AutoGen/AutoComponentTypes.h>
 #if AZ_TRAIT_CLIENT

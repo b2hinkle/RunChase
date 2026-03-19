@@ -15,4 +15,4 @@ namespace xXGameProjectNameXx
 
     using MyExperimentRequestBus = AZ::EBus<MyExperimentRequests>;
 
-} // namespace xXGameProjectNameXx
+}

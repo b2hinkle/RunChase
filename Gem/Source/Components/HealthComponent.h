@@ -34,7 +34,7 @@ namespace xXGameProjectNameXx
         void OnDeactivate(Multiplayer::EntityIsMigrating entityIsMigrating) override;
         //! @}
     };
-} // namespace xXGameProjectNameXx
+}
 
 namespace xXGameProjectNameXx
 {
@@ -68,4 +68,4 @@ namespace xXGameProjectNameXx
             return static_cast<ComponentType&>(GetOwner());
         }
     };
-} // namespace xXGameProjectNameXx
+}

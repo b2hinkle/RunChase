@@ -47,7 +47,7 @@ namespace xXGameProjectNameXx
     void HealthComponent::OnDeactivate([[maybe_unused]] Multiplayer::EntityIsMigrating entityIsMigrating)
     {
     }
-} // namespace xXGameProjectNameXx
+}
 
 
 namespace xXGameProjectNameXx
@@ -78,4 +78,4 @@ namespace xXGameProjectNameXx
         SetHealth(newValue);
     }
 #endif
-} // namespace xXGameProjectNameXx
+}

@@ -1,0 +1,7 @@
+{
+    "O3deFramework": {
+        "Misc": {
+            "LevelGameEntityNetworkSpawnablePathname": "prefabs/levelgameentity.network.spawnable"
+        }
+    }
+}

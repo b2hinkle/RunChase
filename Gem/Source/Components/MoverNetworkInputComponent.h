@@ -62,4 +62,4 @@ namespace xXGameProjectNameXx
             float m_moveRightAxis = 0.f;
         } m_autonomousInputs;
     };
-} // namespace xXGameProjectNameXx
+}

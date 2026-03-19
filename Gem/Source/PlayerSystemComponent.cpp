@@ -1,14 +1,11 @@
 
 #include <Source/PlayerSystemComponent.h>
 
-#include <xXGameProjectNameXx/xXGameProjectNameXxTypeIds.h>
+#include <xXGameProjectNameXxTypeIds.h>
 #include <AzCore/Serialization/SerializeContext.h>
-#include <Source/AutoGen/AutoComponentTypes.h>
 #if AZ_TRAIT_CLIENT
 #include <LyShine/Bus/UiCursorBus.h>
 #endif // #if AZ_TRAIT_CLIENT
-#include <xXGameProjectNameXx/SettingsRegistryAccessors.h>
-#include <AzCore/Component/TickBus.h>
 
 namespace xXGameProjectNameXx
 {

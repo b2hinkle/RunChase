@@ -68,4 +68,4 @@ namespace xXGameProjectNameXx
         m_implementation.OnDeactivate();
 #endif // #if AZ_TRAIT_CLIENT
     }
-} // namespace xXGameProjectNameXx
+}

@@ -48,4 +48,4 @@ namespace xXGameProjectNameXx
 
         const AZ::Component& m_parentComponent;
     };
-} // namespace xXGameProjectNameXx
+}
