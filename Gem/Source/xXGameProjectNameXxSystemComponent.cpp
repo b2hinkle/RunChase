@@ -41,6 +41,12 @@ namespace xXGameProjectNameXx
 
     void xXGameProjectNameXxSystemComponent::GetDependentServices([[maybe_unused]] AZ::ComponentDescriptor::DependencyArrayType& dependent)
     {
+        // @Christian: TODO: [todo][techdebt][workaround][engine] Fix this properly with an engine pull request to allow multiplayer components to exist in
+        // multiple gems without worrying about the order that they are registered in. We add this dependency on the multiplayer system component to make sure
+        // it activates (and registers its multiplayer components) before we activate (and register our multiplayer components). In editor, it seems that
+        // the O3deFramework_Misc system component activates before the Multiplayer system component, but the opposite happens in non-editor. This would cause the
+        // net component IDs to get mismatched between the different targets, and then testing dedicated server in editor would break.
+        dependent.push_back(AZ_CRC_CE("MultiplayerService"));
     }
 
     xXGameProjectNameXxSystemComponent::xXGameProjectNameXxSystemComponent()
