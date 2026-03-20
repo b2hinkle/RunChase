@@ -32,7 +32,7 @@
         "O3deFramework_Misc",
         "O3deUtils_Core",
         "O3deUtils_Misc",
-        "PhysX",
+        "PhysX5",
         "StartingPointInput",
         "xXGameProjectNameXx"
     ],
