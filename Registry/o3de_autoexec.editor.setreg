@@ -2,6 +2,7 @@
     "O3DE": {
         "Autoexec": {
             "ConsoleCommands": {
+                "editorsv_clientserver": true,
                 "editorsv_enabled": true,
                 "editorsv_hidden": true
             }
