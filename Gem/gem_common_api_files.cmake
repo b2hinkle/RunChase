@@ -12,6 +12,5 @@ list(APPEND FILES
     Include/xXGameProjectNameXx/SettingsRegistryAccessors.h
     Include/xXGameProjectNameXx/LevelNames.h
     Include/xXGameProjectNameXx/PlayerBus.h
-    Include/xXGameProjectNameXx/EntityControlInterface.h
     Include/xXGameProjectNameXx/HealthInterface.h
 )
